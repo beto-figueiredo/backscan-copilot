@@ -2,7 +2,7 @@
   "name": "telegram-location-sender",
   "version": "1.0.0",
   "description": "A simple Express app to send location data to Telegram",
-  "main": "server.js",
+  "main": "./src/server.js",
   "scripts": {
     "start": "node server.js"
   },
@@ -16,4 +16,3 @@
     "node": ">=14.0.0"
   }
 }
-
