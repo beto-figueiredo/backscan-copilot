@@ -18,15 +18,21 @@ app.post("/send-location", async (req, res) => {
 
   try {
     // Envia a localização para o Telegram
-    await axios.post(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-      chat_id: TELEGRAM_CHAT_ID,
-      text: message,
-    });
+    await axios.post(
+      `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
+      {
+        chat_id: TELEGRAM_CHAT_ID,
+        text: message,
+      },
+    );
 
     res.status(200).json({ success: true });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ success: false, message: "Erro ao enviar a localização para o Telegram." });
+    res.status(500).json({
+      success: false,
+      message: "Erro ao enviar a localização para o Telegram.",
+    });
   }
 });
 
