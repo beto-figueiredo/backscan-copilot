@@ -77,10 +77,10 @@ npm install
 
 ## 6. Configurar as Variáveis do Projeto
 
-Edite o arquivo `server.js` que está em `src/server.js`:
+Edite o arquivo `server.js`:
 
 ```bash
-nano src/server.js
+nano server.js
 ```
 
 Substitua **BOT-TOKEN** pelo token do seu bot do Telegram.
@@ -113,7 +113,7 @@ Pressione **CTRL + X**, depois **Y** e **Enter** para salvar.
 ## 8. Iniciar o Servidor
 
 ```bash
-node src/server.js
+node server.js
 ```
 
 Se tudo estiver correto, a saída deve indicar que o servidor está rodando.
@@ -157,10 +157,10 @@ Copie a **URL gerada pelo Ngrok** (exemplo: `https://abc123.ngrok.io`).
 
 ## 11. Atualizar a URL no Projeto
 
-Abra o arquivo `script.js` que está em `src/script.js`:
+Abra o arquivo `script.js`:
 
 ```bash
-nano src/script.js
+nano script.js
 ```
 
 Na linha 7, substitua `https://abc123.ngrok.io` pela URL gerada pelo Ngrok:
