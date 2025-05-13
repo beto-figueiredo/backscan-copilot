@@ -95,7 +95,7 @@ Pressione **CTRL + X**, depois **Y** e **Enter** para salvar.
    - Envie uma mensagem no grupo.
    - Acesse:
      ```
-     https://api.telegram.org/botSEU_BOT_TOKEN/getUpdates
+     https://api.telegram.org/7922304298:AAEeQsdH2T284Ilzwu-1O1hIZ06zebwcp_w/getUpdates
      ```
    - Anote o `chat_id`.
 
